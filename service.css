@@ -56,3 +56,10 @@ nav a:hover, nav a:active {
     background-color: #1c008b;
     color: white;
 }
+
+#our-services {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
