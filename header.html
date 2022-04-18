@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<style>
+
+    .body-container {
+    min-height: 100%;
+    padding-bottom: 200px;
+    box-sizing: border-box;
+    }
+
+    .page-header {
+    background-color: #1ecbe1;
+    overflow: hidden;
+    }
+
+    .page-header .container {
+    position: relative;
+    height: 80px;
+    box-sizing: border-box;
+    }
+
+    .page-header .title {
+    float: left;
+    top: 0;
+    bottom: 0;
+    display: inline-table;
+    }
+
+    .page-header .title a {
+    display: inline-block;
+    color: white;
+    padding: 0 10px;
+    display: table-cell;
+    vertical-align: bottom;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 80px;
+    }
+
+    .page-header .title a:hover {
+    color: #E1F5FE;
+    text-decoration: none !important;
+    }
+
+    /* Navigation elements */
+    ul.page-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    }
+
+    ul.page-nav li {
+    display: inline-table;
+    vertical-align: top;
+    /* color: white */
+    }
+
+    ul.page-nav a {
+    display: table-cell;
+    vertical-align: bottom;
+    font-weight: 200;
+    text-decoration: none;
+    color: white;
+    box-sizing: border-box;
+    line-height: 80px;
+    padding: 0px 10px;
+    }
+
+    ul.page-nav a:hover,
+    ul.page-nav a.active {
+    background-color: #1c008b;
+    color: white;
+    }
+
+
+    /* .header{
+        padding: 10px;
+        background: #1ecbe1;
+        color:white;
+    }
+    .header h1 {
+        text-align: left;
+    }
+    .custom-button {
+        font-weight: normal;
+        color:white;
+        text-decoration: none;
+    }
+    .ul {
+        list-style-type: none;
+        margin: 0;
+        padding:0;
+    }
+    .li {
+        display: inline-block
+    }
+    .header book-now {
+        text-align: right;
+    } */
+
+</style>
+
+<body>
+<div class="navigation-bar">
+    <div class="body-container">
+        <header class="page-header">
+            <div class="container">
+                <div class="title">
+                    <a href="/">BestMate</a>
+                </div>
+                <ul class="page-nav">
+                    <li><a href="{{ url_for('list_artists') }}">Services</a></li>
+                    <li><a href="{{ url_for('list_songs') }}">Locations</a></li>
+                    <li><a href="{{ url_for('list_podcasts') }}">About Us</a></li>
+                    <li><a href="{{ url_for('list_podcasts') }}">Book Now!</a></li>
+                </ul>
+            </div>
+        </header>
+</div>
+
+</body>
+
+
+
+
+<!-- <div class="header">
+    <a class="custom-button" href="https://www.google.com.au"><h1>BestMate</h1></a>
+    <div class="topnav">
+        <a>About Us</a>
+        <a>Services</a>
+        <a>Locations</a>
+        <a>Book Now!</a>
+      </div>
+    <a class="book-now" href="https://www.google.com.au"><h1>Book Now!</h1></a>
+</div> -->
+
+</html>
