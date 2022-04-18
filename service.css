@@ -61,5 +61,30 @@ nav a:hover, nav a:active {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 10px;
-    padding-bottom: 20px;
+}
+
+#dog-boarding, #cat-boarding {
+    padding-top: 10px;
+    display: inline-block;
+    box-sizing: content-box;
+    width: 45%;
+}
+
+#dog-boarding a, #cat-boarding a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#dog-boarding {
+    padding-left: 30px;
+}
+
+#cat-boarding {
+    padding-right: 30px;
+    float: right;
 }
