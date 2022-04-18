@@ -80,6 +80,11 @@ nav a:hover, nav a:active {
     height: 30px;
 }
 
+#dog-boarding a:hover, #dog-boarding a:active, #cat-boarding a:hover, #cat-boarding a:active {
+    background-color: lightblue;
+    color: black;
+}
+
 #dog-boarding {
     padding-left: 30px;
 }
@@ -87,4 +92,18 @@ nav a:hover, nav a:active {
 #cat-boarding {
     padding-right: 30px;
     float: right;
+}
+
+footer {
+    float: right;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover, footer a:active {
+    text-decoration: underline;
+    color: gray;
 }
