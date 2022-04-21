@@ -32,11 +32,12 @@ text-transform: uppercase;
 font-weight: bold;
 font-size: 50px;
 line-height: 80px;
+text-decoration: none;
 }
 
 .page-header .title a:hover {
 color: #E1F5FE;
-text-decoration: none !important;
+text-decoration-line: underline;
 }
 
 /* Navigation elements */
