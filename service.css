@@ -20,11 +20,12 @@ header, nav {
     font-weight: bold;
     font-size: 50px;
     line-height: 80px;
+    text-decoration: none;
 }
 
 .title a:hover {
     color: #e1f5fe;
-    text-decoration: none;
+    text-decoration-line: underline;
 }
 
 nav ul {
