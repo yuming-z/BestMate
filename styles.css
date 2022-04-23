@@ -225,15 +225,17 @@ hr{
     display: block;
     text-decoration: none;
     text-align: center;
-    background-color: blue;
-    color: white;
+    background-color: rgb(85, 193, 255);
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    color: black;
     border-radius: 5px;
     height: 30px;
 }
 
 #dog-boarding a:hover, #dog-boarding a:active, #cat-boarding a:hover, #cat-boarding a:active {
-    background-color: lightblue;
-    color: black;
+    opacity: 0.5;
 }
 
 #dog-boarding {
