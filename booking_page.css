@@ -1,0 +1,9 @@
+body {
+  width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+div.group {
+  margin: 20px 0;
+}
