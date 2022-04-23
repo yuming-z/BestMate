@@ -206,3 +206,57 @@ hr{
     margin-top: 5%; 
     margin-bottom: 5%;  
 }
+
+/* services */
+#our-services {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+
+#dog-boarding, #cat-boarding {
+    padding-top: 10px;
+    display: inline-block;
+    height: 100px;
+    width: 45%;
+}
+
+#dog-boarding a, #cat-boarding a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#dog-boarding a:hover, #dog-boarding a:active, #cat-boarding a:hover, #cat-boarding a:active {
+    background-color: lightblue;
+    color: black;
+}
+
+#dog-boarding {
+    padding-left: 30px;
+}
+
+#cat-boarding {
+    padding-right: 30px;
+    float: right;
+}
+
+/* footer */
+footer {
+    padding-top: 30px;
+    float: right;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover, footer a:active {
+    text-decoration-line: underline;
+    color: gray;
+}
