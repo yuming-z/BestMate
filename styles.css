@@ -1,74 +1,61 @@
-.body-container {
-min-height: 100%;
-box-sizing: border-box;
+header, nav {
+    background-color: #1ecbe1;
+    overflow: hidden;
+    position: relative;
+    height: 80px;
+    box-sizing: border-box;
 }
 
-.page-header {
-background-color: #1ecbe1;
-overflow: hidden;
+.title {
+    display: block;
+    float: left;
+    height: 80px;
 }
 
-.page-header .container {
-position: relative;
-height: 80px;
-box-sizing: border-box;
+.title a {
+    display: block;
+    color: white;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 80px;
+    text-decoration: none;
 }
 
-.page-header .title {
-float: left;
-top: 0;
-bottom: 0;
-display: inline-table;
+.title a:hover {
+    color: #e1f5fe;
+    text-decoration-line: underline;
 }
 
-.page-header .title a {
-display: inline-block;
-color: white;
-padding: 0 10px;
-display: table-cell;
-vertical-align: bottom;
-text-transform: uppercase;
-font-weight: bold;
-font-size: 50px;
-line-height: 80px;
-text-decoration: none;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
 }
 
-.page-header .title a:hover {
-color: #E1F5FE;
-text-decoration-line: underline;
+nav li {
+    display: inline-table;
+    vertical-align: top;
 }
 
-/* Navigation elements */
-ul.page-nav {
-list-style-type: none;
-margin: 0;
-padding: 0;
-position: absolute;
-right: 0;
+nav a {
+    display: table-cell;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 200;
+    line-height: 80px;
+    padding: 0 10px;
 }
 
-ul.page-nav li {
-display: inline-table;
-vertical-align: top;
-/* color: white */
-}
-
-ul.page-nav a {
-display: table-cell;
-vertical-align: bottom;
-font-weight: 200;
-text-decoration: none;
-color: white;
-box-sizing: border-box;
-line-height: 80px;
-padding: 0px 10px;
-}
-
-ul.page-nav a:hover,
-ul.page-nav a.active {
-background-color: #1c008b;
-color: white;
+nav a:hover, nav a:active {
+    background-color: #1c008b;
+    color: white;
 }
 
 /* Floating Containers */

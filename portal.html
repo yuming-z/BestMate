@@ -1,8 +1,11 @@
 <!DOCTYPE html>
+
+<html lang="en-AU">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Header Example</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewpoint" content="width=device-width initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <!-- <style>
@@ -171,64 +174,46 @@
 
 </style> -->
 
+<header class="title">
+    <!-- link to be added -->
+    <a href="#">BestMate</a>
+</header>
+
+<nav>
+    <ul>
+        <!-- link to be added -->
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Locations</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Book Now!</a></li>
+    </ul>
+</nav>
+
 <body>
-<div class="navigation-bar">
-    <div class="body-container">
-        <header class="page-header">
-            <div class="container">
-                <div class="title">
-                    <a href="/">BestMate</a>
-                </div>
-                <ul class="page-nav">
-                    <li><a href="{{ url_for('list_artists') }}">Services</a></li>
-                    <li><a href="{{ url_for('list_songs') }}">Locations</a></li>
-                    <li><a href="{{ url_for('list_podcasts') }}">About Us</a></li>
-                    <li><a href="{{ url_for('list_podcasts') }}">Book Now!</a></li>
+    <div class="float-container">
+        <div class="float-child">
+            <!-- <ul class="portal-nav"> -->
+                <div class="portal-nav-item"><a href="{{ url_for('list_artists') }}">My Account</a></div>
+                <div class="portal-nav-item"><a href="{{ url_for('list_songs') }}">My Pets</a></div>
+                <div class="portal-nav-item"><a href="{{ url_for('list_podcasts') }}">My Purchases</a></div>
+                <!-- <div class="portal-nav-item"><a href="{{ url_for('list_podcasts') }}"></a></div> -->
+            <!-- </ul> -->
+        </div>
+        <div class="float-child-two">
+            <div class="pet-container">
+                <a>Pet 1</a>
+                <img src="https://www.akc.org/wp-content/uploads/2017/11/German-Shepherd-on-White-00.jpg">
+                <ul class="manage-pet">
+                    <li><a href="{{ url_for('list_artists') }}">Manage</a></li>
+                    <li><a href="{{ url_for('list_artists') }}">Book a stay</a></li>
                 </ul>
             </div>
-        </header>
-</div>
-
-<div class="float-container">
-    <div class="float-child">
-        <!-- <ul class="portal-nav"> -->
-            <div class="portal-nav-item"><a href="{{ url_for('list_artists') }}">My Account</a></div>
-            <div class="portal-nav-item"><a href="{{ url_for('list_songs') }}">My Pets</a></div>
-            <div class="portal-nav-item"><a href="{{ url_for('list_podcasts') }}">My Purchases</a></div>
-            <!-- <div class="portal-nav-item"><a href="{{ url_for('list_podcasts') }}"></a></div> -->
-        <!-- </ul> -->
-    </div>
-    <div class="float-child-two">
-        <div class="pet-container">
-            <a>Pet 1</a>
-            <img src="https://www.akc.org/wp-content/uploads/2017/11/German-Shepherd-on-White-00.jpg">
-            <ul class="manage-pet">
-                <li><a href="{{ url_for('list_artists') }}">Manage</a></li>
-                <li><a href="{{ url_for('list_artists') }}">Book a stay</a></li>
-            </ul>
-        </div>
-        <div class="pet-container">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Circled_plus.svg/1200px-Circled_plus.svg.png">
-            <a>Add a Pet</a>
+            <div class="pet-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Circled_plus.svg/1200px-Circled_plus.svg.png">
+                <a>Add a Pet</a>
+            </div>
         </div>
     </div>
-</div>
-
-
 </body>
-
-
-
-
-<!-- <div class="header">
-    <a class="custom-button" href="https://www.google.com.au"><h1>BestMate</h1></a>
-    <div class="topnav">
-        <a>About Us</a>
-        <a>Services</a>
-        <a>Locations</a>
-        <a>Book Now!</a>
-      </div>
-    <a class="book-now" href="https://www.google.com.au"><h1>Book Now!</h1></a>
-</div> -->
 
 </html>
