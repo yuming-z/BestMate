@@ -1,14 +1,4 @@
-body {
-    width: 800px;
-    margin: 0 auto;
-    padding: 50px;
-  }
 
-.cart {
-    width: 700px;
-    padding: 0 10px 10px;
-    border: 1px solid #D5E5F5;
-}
 
 .cart-title {
     margin-bottom: 10px;
