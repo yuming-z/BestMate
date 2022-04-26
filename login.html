@@ -47,7 +47,7 @@
 
     }
 
-    button {
+    a.button {
         background-color: #1ecbe1;
         color: white;
         padding: 14px 20px;
@@ -56,6 +56,7 @@
         cursor: pointer;
         width: 40%;
         border-radius: 10px;
+        text-decoration: None;
     }
 
     header, nav {
@@ -302,8 +303,8 @@
     <ul>
         <!-- link to be updated -->
         <li><a href="service.html">Services</a></li>
-        <li><a href="#">Locations</a></li>
-        <li><a href="#">About Us</a></li>
+        <li><a href="Locations.html">Locations</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
         <li><a href="#">Book Now!</a></li>
     </ul>
 </nav>
@@ -331,9 +332,10 @@
                 id="password-box" name="password" \
                 class="" required="">
         </div>
-        <a href="create.html">create account</a>
+        <a class ="button" href="booking_page.html">Create An Account</a>
         <t></t>
-        <button type="submit" onclick="ValidateEmail()">Login</button>
+        <a class="button" href="portal - my pets.html">Login</a>
+        <!-- <button type="submit" onclick="ValidateEmail()">Login</button> -->
 
     </div>
     </form>
@@ -364,7 +366,8 @@
         console.log("Reached email address");
         if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
             alert("Logged in successfully");
-            return (true)
+            window.location.replace("index.html")
+            return true;
         }
         alert("You have entered an invalid email address!")
         return (false)
