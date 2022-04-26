@@ -23,7 +23,7 @@ header, nav, footer {
     text-decoration: none;
 }
 
-.title a:hover {
+.title a:hover, .business-name:hover, .foot a:hover {
     color: #e1f5fe;
     text-decoration-line: underline;
 }
@@ -354,4 +354,9 @@ footer > .booking-button {
     position: absolute;
     right: 0;
     bottom: 10px;
+}
+
+.booking-button:hover {
+    background-color: #AEEABF;
+    text-decoration-line: underline;
 }
