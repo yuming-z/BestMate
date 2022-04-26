@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Server</title>
+    <link rel="stylesheet" href="booking_page.css">
+</head>
+
+<head>
+  <title>Services</title>
+  <meta charset="UTF-8" />
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<header class="title">
+  <!-- link to be updated -->
+  <a href="index.html">BestMate</a>
+</header>
+
+<nav>
+  <ul>
+      <!-- link to be updated -->
+      <li><a href="service.html">Services</a></li>
+      <li><a href="Locations.html">Locations</a></li>
+      <li><a href="AboutUs.html">About Us</a></li>
+      <li><a href="#">Book Now!</a></li>
+  </ul>
+</nav>
+
+<body>
+    <form action="reservation.php" method="post" class = "form">
+
+        <label>Owner Information</label>
+        <div class="group">
+          <label for="first_name">First Name</label>
+          <input type="text" id="first_name" name="cutomer_first_name" placeholder="Braylon" >
+
+          <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="cutomer_last_name" placeholder="Shu" >
+        </div>
+   
+        <div class="group">
+          <label for="email">Your E-mail</label>
+          <input type="email" id="email" name="cutomer_email" placeholder="hanshu@email.com" >
+
+          <label for="phone">Your Phone</label>
+          <input type="tel" id="phone" name="cutomer_phone" placeholder="0123456789" pattern="[0-9]{10}" >
+        </div>
+
+        <hr>
+
+        <label>Emergency Contact</label>
+        <div class="group">
+            <label for="emergency_name">Emergency Name</label>
+            <input type="text" id="emergency_name" name="emergency_name" placeholder="Full Name" >
+  
+            <label for="emergency_phone">Emergency Phone</label>
+            <input type="tel" id="emergency_phone" name="emergency_phone" placeholder="0123456789" pattern="[0-9]{10}" >
+          </div>
+
+        <hr>
+
+        <label>Address</label>
+        <div class="group">
+            <label for="Street">Street Address</label>
+            <input type="text" id="Street" name="Street" >
+        </div>
+        <div class="group">
+            <label for="Street">Street Address Line2</label>
+            <input type="text" id="Street" name="Street">
+        </div>
+        <div class="group">
+            <label for="City">City</label>
+            <input type="text" id="City" name="City" >
+            <label for="State">State</label>
+            <input type="text" id="State" name="State" >
+        </div>
+        <div class="group">
+            <label for="Postal">Postal / Zip Code</label>
+            <input type="text" id="Postal" name="Postal" >
+        </div>
+
+        <hr>
+
+        <label>Pet Information</label>
+        <div class="group">
+          <label for="pet_name">Pet Name</label>
+          <input type="text" id="pet_name" name="pet_name" placeholder="pet name" >
+        </div>
+
+        <div class="group">
+          <label for="pet_food">Favourite Food</label>
+          <input type="text" id="pet_food" name="pet_food" placeholder="" >
+        </div>
+    
+        <div class="group">
+          <label for="checkin-date">Check-in Date</label>
+          <input type="date" id="checkin-date" name="checkin" >
+
+          <label for="checkout-date">Check-out Date</label>
+          <input type="date" id="checkout-date" name="checkout" >
+        </div>
+        
+        <div class="group">
+          <label for="room-selection">Select Room</label>
+          <select id="room-selection" name="room_preference" >
+              <option value="">Choose a Room from the List</option>
+              <option value="connecting">normal</option>
+              <option value="adjoining">good</option>
+              <option value="adjacent">best</option>
+          </select>
+        </div>
+
+        <hr>
+        
+        <div class="group">
+          <label for="message">special_consideration for your pets?</label> <br>
+          <textarea cols='60' rows='8' id="message" name="visitor_message" placeholder="Tell us anything else that might be special_consideration for your pets?" ></textarea>
+        </div>
+        <a href="cart_page.html"><input type="button" value="Add to cart"></a>
+    </form>
+</body>

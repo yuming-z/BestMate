@@ -1,24 +1,87 @@
 <!DOCTYPE html>
+
+<html lang="en-AU">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
     <title>Header Example</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        header, nav {
+            background-color: #1ecbe1;
+            overflow: hidden;
+            position: relative;
+            height: 80px;
+            box-sizing: border-box;
+        }
+
+        .title {
+            display: block;
+            float: left;
+            height: 80px;
+        }
+
+        .title a {
+            display: block;
+            color: white;
+            padding: 0 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 80px;
+            text-decoration: none;
+        }
+
+        .title a:hover {
+            color: #e1f5fe;
+            text-decoration-line: underline;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: absolute;
+            right: 0;
+        }
+        
+        nav li {
+            display: inline-table;
+            vertical-align: top;
+        }
+        
+        nav a {
+            display: table-cell;
+            box-sizing: border-box;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 200;
+            line-height: 80px;
+            padding: 0 10px;
+        }
+
+        nav a:hover, nav a:active {
+            background-color: #1c008b;
+            color: white;
+        }
+    </style>
 </head>
 
-<body>
-    <div class="navigation-bar">
-        <div class="body-container">
-            <header class="page-header">
-                <div class="container">
-                    <div class="title">
-                        <a href="/">BestMate</a>
-                    </div>
-                    <ul class="page-nav">
-                        <li><a href="{{ url_for('list_artists') }}">Services</a></li>
-                        <li><a href="{{ url_for('list_songs') }}">Locations</a></li>
-                        <li><a href="{{ url_for('list_podcasts') }}">About Us</a></li>
-                        <li><a href="{{ url_for('list_podcasts') }}">Book Now!</a></li>
-                    </ul>
-                </div>
-            </header>
-    </div>
+<header class="title">
+    <!-- link to be added -->
+    <a href="#">BestMate</a>
+</header>
+
+<nav>
+    <ul>
+        <!-- link to be added -->
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Locations</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Book Now!</a></li>
+    </ul>
+</nav>
+
+</html>
