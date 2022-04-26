@@ -244,12 +244,13 @@ hr{
 }
 
 .review-content h3::before{
-    content: "\027AA";
+    content: "\27A4";
     margin-right: 6px;
 }
 
 .review-content h3{
     float: right;
+}
 
 /* services */
 #our-services {
