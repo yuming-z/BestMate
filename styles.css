@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
-header, nav {
+header, nav, footer {
     background-color: #1ecbe1;
     overflow: hidden;
     position: relative;
@@ -298,6 +298,7 @@ ul.manage-pet a{
 
 /* footer */
 footer {
+    margin-top: 30px;
     padding-top: 30px;
     height: 120px;
     bottom: 0;
