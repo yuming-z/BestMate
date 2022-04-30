@@ -31,7 +31,7 @@
 <body>
     <form action="reservation.php" method="post" class = "form">
 
-        <label>Owner Information</label>
+        <!-- <label>Owner Information</label>
         <div class="group">
           <label for="first_name">First Name</label>
           <input type="text" id="first_name" name="cutomer_first_name" placeholder="Braylon" >
@@ -59,25 +59,33 @@
             <input type="tel" id="emergency_phone" name="emergency_phone" placeholder="0123456789" pattern="[0-9]{10}" >
           </div>
 
-        <hr>
+        <hr> -->
 
         <label>Address</label>
         <div class="group">
             <label for="Street">Street Address</label>
+            <br>
             <input type="text" id="Street" name="Street" >
         </div>
         <div class="group">
             <label for="Street">Street Address Line2</label>
+            <br>
             <input type="text" id="Street" name="Street">
         </div>
         <div class="group">
             <label for="City">City</label>
+            <br>
             <input type="text" id="City" name="City" >
-            <label for="State">State</label>
+            <br>
+          </div>
+        <div class="group">
+            <label for="State">State</label> 
+            <br>      
             <input type="text" id="State" name="State" >
         </div>
         <div class="group">
             <label for="Postal">Postal / Zip Code</label>
+            <br>
             <input type="text" id="Postal" name="Postal" >
         </div>
 
@@ -86,19 +94,23 @@
         <label>Pet Information</label>
         <div class="group">
           <label for="pet_name">Pet Name</label>
+          <br>
           <input type="text" id="pet_name" name="pet_name" placeholder="pet name" >
         </div>
 
         <div class="group">
           <label for="pet_food">Favourite Food</label>
+          <br>
           <input type="text" id="pet_food" name="pet_food" placeholder="" >
         </div>
     
         <div class="group">
           <label for="checkin-date">Check-in Date</label>
+          
           <input type="date" id="checkin-date" name="checkin" >
 
           <label for="checkout-date">Check-out Date</label>
+         
           <input type="date" id="checkout-date" name="checkout" >
         </div>
         
