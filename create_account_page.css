@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    background-color: #fdfdfd;
+}
+.body{
+    width: 780px;
+    height: 600px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 0 34px 30px 34px;
+}
+.title{
+    display: block;
+    width: 255px;
+    height: 100px;
+    background-image: url(pic/signup_dog.jpg);
+    background-position: 50%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.middle{
+    margin: 0 0 0 130px;
+    color: #273646;
+}
+.middle input{
+    border:1px solid #707072;
+}
+
+.l{
+    font-size:18px;
+}
+.d{
+    display:inline;
+}
+.i{
+    height:30px;
+    width:300px;
+}
+
+.footer{
+    display: block;
+    height: 30px;
+    margin: 100px 0 0 600px;
+    
+}
+.footer li{
+    float: left;
+}
+
+.footer li a ,
+.footer li span {
+    color: #757575;
+    font-size: 14px;
+}
+.footer li a{
+display: inline-block;
+    height: 19px;
+    padding: 0 10px;
+    text-align: center;
+}
+.footer li a:hover{
+    color: #2d4aa8;
+}
