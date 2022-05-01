@@ -472,3 +472,47 @@ footer > .booking-button {
 .about-content h1::after, #dog-boarding h1::after, #cat-boarding h1::after {
     content: "\1F43E";
 }
+
+.Locations-content > .header {
+    display: inline-block;
+    background-image: url(pic/service_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    height: 350px;
+    width: 100%;
+}
+
+.Locations-content > .header h1 {
+    display: block;
+    padding-top: 3%;
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0 1px 4px rgb(0 0 0 / 50%);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.Locations-content > .header > .nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.25);
+    height: 25px;
+    width: 150px;
+    font-size: 18px;
+    padding: 1%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Locations-content > .header > .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
