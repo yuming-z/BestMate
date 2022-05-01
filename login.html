@@ -3,7 +3,7 @@
         border: 50px;
     }
 
-    input[type=text] {
+    input[type=email] {
         width: 100%;
         padding: 12px 20px;
         margin: 8px 5;
@@ -322,7 +322,7 @@
     <div align = "center" class = "login-whole">
         <div class = "container">
                 <label for="email"><strong>Email</strong></label>
-                <input type = "text" placeholder="Please enter your Email"
+                <input type = "email" placeholder="Please enter your Email"
                 id="email-box" email="email" 
                 required="">
 
@@ -365,11 +365,10 @@
         const email = document.getElementById('email-box').value;
         console.log("Reached email address");
         if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-            alert("Logged in successfully");
-            window.location.replace("index.html")
+            window.location.replace("portal-my-pets.html")
             return true;
         }
-        alert("You have entered an invalid email address!")
+        window.location.replace('login.html')
         return (false)
     }
 
