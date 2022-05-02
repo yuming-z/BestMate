@@ -49,10 +49,10 @@ nav li {
 nav a {
     display: table-cell;
     box-sizing: border-box;
-    color: white;
+    color: #073036;
     text-align: center;
     text-decoration: none;
-    font-weight: 200;
+    font-weight: 800;
     line-height: 80px;
     padding: 0 10px;
 }
@@ -348,6 +348,7 @@ ul.manage-pet a{
 
 /* footer */
 footer {
+    background-color: #073036;
     margin-top: 30px;
     padding-top: 30px;
     height: 120px;
