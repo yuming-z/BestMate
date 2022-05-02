@@ -96,7 +96,8 @@
 
 /* check out button */
 .bottom-btn {
-    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
     color: #FFF;
     font-size: 14px;
     font-weight: 600px;
