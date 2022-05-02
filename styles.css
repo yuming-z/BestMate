@@ -212,13 +212,13 @@ ul.manage-pet a{
     margin-bottom: 5%;  
 }
 
-.review{
+.index-content{
     text-align: center;
     padding-top: 10px;
     background: url(./pic/review_bg.jpg);
 }
 
-.review h2{
+.index-content h2{
     font-size: 45px;
 }
 
@@ -232,18 +232,21 @@ ul.manage-pet a{
 .review-content div{
     display: inline-block;
     background-color: rgba(252, 240, 226, 0.5);
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 1%;
-    height: 400px;
-    width: 300px;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    display: table-cell;
 }
 
 .review-content p{
     font-size: 18px;
-    line-height: 2.5;
+    line-height: 1.5;
+    text-align: justify;
     font-family: 'Times New Roman', Times, serif;
 }
 
