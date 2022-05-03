@@ -24,8 +24,8 @@
         <ul>
             <!-- link to be added -->
             <li><a href="service.html">Services</a></li>
-            <li><a href="locations.html">Locations</a></li>
-            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="Locations.html">Locations</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
             <li><a href="login.html">Sign out</a></li>
         </ul>
     </nav>
@@ -35,20 +35,7 @@
     <table class="table">
         <tr>
             <th width="60"><span class="all">Select All</span></th><th width="150">Pets</th><th width="100">Pet Name</th><th>Special Consideration</th><th width="120">Price per night</th>
-            <th width="120">Length of stay</th><th>Starting Date</th><th width="120">All</th><th width="80">Operation</th>
-        </tr>
-
-        <tr class="item">
-            <td><input type="checkbox" checked="checked" class="check" /></td>
-            <td class="txt-left"><span class="name"></span><br>
-                <img src="pic/dog1.jpg" alt="dog" width="300" height="200"> </td>
-            <td><span class="sc">Jack</span></td>
-            <td><span class="sc">My babe eat dinner at 9 pm</span></td>
-            <td><span class="price">200</span></td>
-            <td><span class="reduce">-</span><span class="num">0</span> <span class="add">+</span> </td>
-            <td><input type="date">Select a date</td>
-            <td><span class="subtotal">0</span></td>
-            <td><span class="del">Delete</span></td>
+            <th width="120">Length of stay</th><th>Starting Date</th><th>End Date</th><th width="120">All</th><th width="80">Operation</th>
         </tr>
 
         <tr class="item">
@@ -58,9 +45,10 @@
             <td><span class="sc">Jerry</span></td>
             <td><span class="sc">don't let him touch fire</span></td>
             <td><span class="price">120</span></td>
-            <td><span class="reduce">-</span><span class="num">0</span> <span class="add">+</span> </td>
-            <td><input type="date">Select a date</td>
-            <td><span class="subtotal">0</span></td>
+            <td><span class="reduce">-</span><span class="num">2</span> <span class="add">+</span> </td>
+            <td><input type="text" class="form-control" placeholder="18-12-2021" onfocus="(this.type='date')" /></td>
+            <td><input type="text" class="form-control" placeholder="24-12-2021" onfocus="(this.type='date')" /></td>
+            <td><span class="subtotal">2333</span></td>
             <td><span class="del">Delete</span></td>
         </tr>
 
@@ -71,9 +59,10 @@
             <td><span class="sc">Tom</span></td>
             <td><span class="sc">She was terrified of other strange cats and left her alone as much as possible</span></td>
             <td><span class="price">300</span></td>
-            <td><span class="reduce">-</span><span class="num">0</span> <span class="add">+</span> </td>
-            <td><input type="date">Select a date</td>
-            <td><span class="subtotal">0</span></td>
+            <td><span class="reduce">-</span><span class="num">4</span> <span class="add">+</span> </td>
+            <td><input type="text" class="form-control" placeholder="18-12-2021" onfocus="(this.type='date')" /></td>
+            <td><input type="text" class="form-control" placeholder="22-12-2021" onfocus="(this.type='date')" /></td>
+            <td><span class="subtotal">1314</span></td>
             <td><span class="del">Delete</span></td>
         </tr>
         
@@ -81,8 +70,11 @@
             <td colspan="6">
                 <span class="bottom-span">Have Select <span class="total-num">0</span> Items</span>
                 <span class="bottom-span">Total: <span class="total-price">0</span></span>
-                <a href="checkout.html" class="bottom-btn">Checkout</a>
+                <span class="btn">
+                    <a href="Checkout.html">Check out</a>
+                </span>
             </td>
+        
         </tr>
         
     </table>
