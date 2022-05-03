@@ -23,9 +23,9 @@
   <ul>
       <!-- link to be updated -->
       <li><a href="service.html">Services</a></li>
-      <li><a href="locations.html">Locations</a></li>
-      <li><a href="aboutUs.html">About Us</a></li>
-      <li><a href="#">Sign out</a></li>
+      <li><a href="Locations.html">Locations</a></li>
+      <li><a href="AboutUs.html">About Us</a></li>
+      <li><a href="#">Book Now!</a></li>
   </ul>
 </nav>
 
@@ -62,7 +62,7 @@
 
         <hr> -->
 
-        <label>Address</label>
+        <!-- <label>Address</label>
         <div class="group">
             <label for="Street">Street Address</label>
             <br>
@@ -90,20 +90,26 @@
             <input type="text" id="Postal" name="Postal" >
         </div>
 
-        <hr>
+        <hr> -->
 
-        <label>Pet Information</label>
+        <strong><label class="strong_pet">Pet 1</label></strong>
         <div class="group">
           <label for="pet_name">Pet Name</label>
           <br>
           <input type="text" id="pet_name" name="pet_name" placeholder="pet name" >
         </div>
+        <div class="group">
+          <label for="pet_food">Pet Type</label>
+          <br>
+          <input type="text" id="pet_food" name="pet_food" placeholder="Cat" >
+        </div>
 
         <div class="group">
           <label for="pet_food">Favourite Food</label>
           <br>
-          <input type="text" id="pet_food" name="pet_food" placeholder="" >
+          <input type="text" id="pet_food" name="pet_food" placeholder="Meat" >
         </div>
+        
     
         <div class="group">
           <label for="checkin-date">Check-in Date</label>
@@ -116,22 +122,230 @@
         </div>
         
         <div class="group">
-          <label for="room-selection">Select Room</label>
+          <label for="room-selection">Select Room package</label>
           <select id="room-selection" name="room_preference" >
               <option value="">Choose a Room from the List</option>
-              <option value="connecting">normal</option>
-              <option value="adjoining">good</option>
-              <option value="adjacent">best</option>
+              <option value="connecting">Crazy normal package $44 per day</option>
+              <option value="adjoining">Such a good package $58 per day</option>
+              <option value="adjacent">Even the best package $100 per day</option>
+              <option value="adjacent">Royal individual package $120 per day</option>
+              <option value="adjacent">Bill Guys package $1000 per day</option>
           </select>
+        </div>
+        <div class="group">
+          <label for="message">special consideration for your pets?</label> <br><br>
+          <textarea cols='100' rows='8' id="message" name="visitor_message" placeholder="Tell us anything else that might be special_consideration for your pets?" ></textarea>
         </div>
 
         <hr>
+
+        <br>
+        <div class="group">
+          <label for="room-selection">Please select the activities for pet from list then tick the days/times at which you'd like the activity to occur</label>
+          <br>
+          <br>
+          <select id="room-selection" name="room_preference" >
+              <option value="connecting">ACTIVITY - Additional Cat - Date at $22.00 JOJO day special</option>
+              <option value="adjoining">ACTIVITY - Additional Cat - Date at $18.00 Chris day special</option>
+              <option value="adjacent">ACTIVITY - Additional Cat - Date at $24.00 golden experience</option>
+          </select>
+        </div>
+        <br>
+        <div class="group">
+          <label for="room-selection">ACTIVITY - Additional Cat-Date</label>  
+        </div>
+        <div class="group">
+          <label for="message">Enter Any general note you want to make for pet in this Activity<br>
+             - additional Cate-Date activity for Lokki.
+              <br>If you want to address a particular day then you can enter a remark in the table below</label> <br>
+          <br>
+          <textarea cols='100' rows='8' id="message" name="visitor_message" placeholder="Tell us anything else that might be special_consideration for your pets?" ></textarea>
+        </div>
+        <br>
+        <div>
+          <table>
+            <tr>
+              <th>Day</th>
+              <th>AM</th>
+              <th>PM</th>
+              <th>Notes</th>
+            </tr>
+            <tr>
+              <td>Thursday 2nd June</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><textarea cols='10' rows='1' id="message" name="visitor_message" placeholder="Notes" ></textarea></td>
+            </tr>
+            <tr>
+              <td>Saturday 12nd June</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><textarea cols='10' rows='1' id="message" name="visitor_message" placeholder="Notes" ></textarea></td>
+            </tr>
+            <tr>
+              <td>Friday 15nd June</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><textarea cols='10' rows='1' id="message" name="visitor_message" placeholder="Notes" ></textarea></td>
+         
+            </tr>
+            <tr>
+              <td>Thursday 15nd June</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><textarea cols='10' rows='1' id="message" name="visitor_message" placeholder="Notes" ></textarea></td>
+            
+            </tr>
+            <tr>
+              <td>Monday 25nd June</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><textarea cols='10' rows='1' id="message" name="visitor_message" placeholder="Notes" ></textarea></td>
+           
+            </tr>
+            <tr>
+              <td>Thursday 30nd June</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><textarea cols='10' rows='1' id="message" name="visitor_message" placeholder="Notes" ></textarea></td>
+             
+            </tr>
+          </table>
+        </div>
+
+
+        <hr>
+
+
+        <label class="strong_pet">Pet 2</label>
+        <div class="group">
+          <label for="pet_name">Pet Name</label>
+          <br>
+          <input type="text" id="pet_name" name="pet_name" placeholder="pet name" >
+        </div>
+        <div class="group">
+          <label for="pet_food">Pet Type</label>
+          <br>
+          <input type="text" id="pet_food" name="pet_food" placeholder="Cat" >
+        </div>
+
+        <div class="group">
+          <label for="pet_food">Favourite Food</label>
+          <br>
+          <input type="text" id="pet_food" name="pet_food" placeholder="Meat" >
+        </div>
+        
+    
+        <div class="group">
+          <label for="checkin-date">Check-in Date</label>
+          
+          <input type="date" id="checkin-date" name="checkin" >
+
+          <label for="checkout-date">Check-out Date</label>
+         
+          <input type="date" id="checkout-date" name="checkout" >
+        </div>
         
         <div class="group">
-          <label for="message">special_consideration for your pets?</label> <br>
-          <textarea cols='60' rows='8' id="message" name="visitor_message" placeholder="Tell us anything else that might be special_consideration for your pets?" ></textarea>
+          <label for="room-selection">Select Room package</label>
+          <select id="room-selection" name="room_preference" >
+              <option value="">Choose a Room from the List</option>
+              <option value="connecting">Crazy normal package $44 per day</option>
+              <option value="adjoining">Such a good package $58 per day</option>
+              <option value="adjacent">Even the best package $100 per day</option>
+              <option value="adjacent">Royal individual package $120 per day</option>
+              <option value="adjacent">Bill Guys package $1000 per day</option>
+          </select>
         </div>
-        <a href="cart_page.html"><input type="button" value="Add to cart"></a>
+        <div class="group">
+          <label for="message">special consideration for your pets?</label> <br><br>
+          <textarea cols='100' rows='8' id="message" name="visitor_message" placeholder="Tell us anything else that might be special_consideration for your pets?" ></textarea>
+        </div>
+
+        <hr>
+
+        <br>
+        <div class="group">
+          <label for="room-selection">Please select the activities for pet from list then tick the days/times at which you'd like the activity to occur</label>
+          <br>
+          <br>
+          <select id="room-selection" name="room_preference" >
+              <option value="connecting">ACTIVITY - Additional Cat - Date at $22.00 JOJO day special</option>
+              <option value="adjoining">ACTIVITY - Additional Cat - Date at $18.00 Chris day special</option>
+              <option value="adjacent">ACTIVITY - Additional Cat - Date at $24.00 golden experience</option>
+          </select>
+        </div>
+        <br>
+        <div class="group">
+          <label for="room-selection">ACTIVITY - Additional Cat-Date</label>  
+        </div>
+        <div class="group">
+          <label for="message">Enter Any general note you want to make for pet in this Activity<br>
+             - additional Cate-Date activity for Lokki.
+              <br>If you want to address a particular day then you can enter a remark in the table below</label> <br>
+          <br>
+          <textarea cols='100' rows='8' id="message" name="visitor_message" placeholder="Tell us anything else that might be special_consideration for your pets?" ></textarea>
+        </div>
+        <br>
+        <div>
+          <table>
+            <tr>
+              <th>Day</th>
+              <th>AM</th>
+              <th>PM</th>
+              <th>Notes</th>
+            </tr>
+            <tr>
+              <td>Thursday 2nd June</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><textarea cols='10' rows='1' id="message" name="visitor_message" placeholder="Notes" ></textarea></td>
+            </tr>
+            <tr>
+              <td>Saturday 12nd June</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><textarea cols='10' rows='1' id="message" name="visitor_message" placeholder="Notes" ></textarea></td>
+            </tr>
+            <tr>
+              <td>Friday 15nd June</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><textarea cols='10' rows='1' id="message" name="visitor_message" placeholder="Notes" ></textarea></td>
+         
+            </tr>
+            <tr>
+              <td>Thursday 15nd June</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><textarea cols='10' rows='1' id="message" name="visitor_message" placeholder="Notes" ></textarea></td>
+            
+            </tr>
+            <tr>
+              <td>Monday 25nd June</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><textarea cols='10' rows='1' id="message" name="visitor_message" placeholder="Notes" ></textarea></td>
+           
+            </tr>
+            <tr>
+              <td>Thursday 30nd June</td>
+              <td><input type="checkbox"></td>
+              <td><input type="checkbox"></td>
+              <td><textarea cols='10' rows='1' id="message" name="visitor_message" placeholder="Notes" ></textarea></td>
+             
+            </tr>
+          </table>
+        </div>
+
+
+        <hr>
+        
+        
+        
+        <span class="btn">
+          <a href="cart_page.html">Add To Cart</a>
+      </span>
     </form>
 </body>
 
