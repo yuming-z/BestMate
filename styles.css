@@ -484,6 +484,7 @@ footer > .booking-button {
     content: "\1F43E";
 }
 
+/* Locations */
 .Locations-content > .header {
     display: inline-block;
     background-image: url(pic/service_background.jpg);
