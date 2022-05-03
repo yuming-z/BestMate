@@ -8,13 +8,11 @@ a{
 li{
     list-style: none;
 }
-body{
-    background-color: #fdfdfd;
-}
+
 .body{
     width: 780px;
     height: 600px;
-    background-color: white;
+    /* background-color: white; */
     margin: 0 auto;
     padding: 0 34px 30px 34px;
 }
