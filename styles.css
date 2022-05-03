@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    background: url(./pic/review_bg.jpg);
 }
 
 header, nav, footer {
@@ -214,8 +215,7 @@ ul.manage-pet a{
 
 .index-content{
     text-align: center;
-    padding-top: 10px;
-    background: url(./pic/review_bg.jpg);
+    padding-top: 10px;  
 }
 
 .index-content h2{
