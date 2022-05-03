@@ -385,12 +385,12 @@ footer > .foot {
 }
 
 footer > .foot li {
-    display: inline-table;
+    display: inline;
 }
 
 footer > .foot a {
-    display: table-cell;
-    box-sizing: border-box;
+    display: inline-block;
+    box-sizing: content-box;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -519,4 +519,32 @@ footer > .booking-button {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+    video {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        height: 320px;
+    }
+
+    footer > .foot li {
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        padding: 0 20vw;
+    }
+
+    footer > .foot a {
+        display: table-cell;
+        padding: 5px 0;
+    }
+
+    footer > .booking-button {
+        margin: 0 33vw;
+    }
 }
