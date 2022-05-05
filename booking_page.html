@@ -126,43 +126,55 @@
           <label for="room-selection">Select Room package</label>
           <select id="room-selection" name="room_preference" >
               <option value="">Choose a Room from the List</option>
-              <option value="connecting">Crazy normal package $44 per day</option>
-              <option value="adjoining">Such a good package $58 per day</option>
-              <option value="adjacent">Even the best package $100 per day</option>
-              <option value="adjacent">Royal individual package $120 per day</option>
-              <option value="adjacent">Bill Guys package $1000 per day</option>
+              <option value="connecting">Crazy normal package $44 per day (6 in one room with window) - sofa, small bed, window, playground </option>
+              <option value="adjoining">Such a good package $58 per day (4 in one room with window) - sofa, small bed, window, playground </option>
+              <option value="adjacent">Even the best package $100 per day (individual room without window) - sofa, large bed, window, playground, toy room  </option>
+              <option value="adjacent">Royal individual package $120 per day (individual room with window) - sofa, small bed, window, playground </option>
+              <option value="adjacent">Bill Guys package $1000 per day (individual room and gallery) 
+                - sofa, small bed, window, playground, sport equipment, TV</option>
           </select>
         </div>
         <div class="group">
-          <label for="message">special consideration for your pets?</label> <br><br>
-          <textarea cols='100' rows='8' id="message" name="visitor_message" placeholder="Tell us anything else that might be special_consideration for your pets?" ></textarea>
+          <label for="room-selection">Select A Food Menu</label>
+          <select id="room-selection" name="room_preference" >
+              <option value="">Choose a Food Menu from the List</option>
+              <option value="connecting">Healthy Food package without snackes Daily $10 (Only healthy Staple)</option>
+              <option value="adjoining">Owner's love Food Package Daily $15 (Healthy staple, one can)</option>
+              <option value="adjacent">Even Better Food Pacjage Daily $30 (Healthy staple, one can, fresh meat base on requirement)</option>
+              <option value="adjacent">Royal Food Package package Daily $50 (Fresh Meat, one can, snackes, Vitamin, calcium)</option>
+              <option value="adjacent">Any special consideration $5</option>
+          </select>
+        </div>
+        <div class="group">
+          <label for="message">special consideration for your pets about food menu?</label> <br><br>
+          <textarea cols='100' rows='3' id="message" name="visitor_message" placeholder="Tell us anything else that might be special_consideration for your pets?" ></textarea>
+        </div>
+
+        <div class="group">
+          <label for="message">special consideration for your pets about Room Configuation?</label> <br><br>
+          <textarea cols='100' rows='3' id="message" name="visitor_message" placeholder="Tell us anything else that might be special_consideration for your pets?" ></textarea>
         </div>
 
         <hr>
 
+        <strong>ACTIVITY</strong>
+
         <br>
         <div class="group">
-          <label for="room-selection">Please select the activities for pet from list then tick the days/times at which you'd like the activity to occur</label>
+          <label for="room-selection">Please select an activity package from the list daily</label>
           <br>
           <br>
           <select id="room-selection" name="room_preference" >
-              <option value="connecting">ACTIVITY - Additional Cat - Date at $22.00 JOJO day special</option>
-              <option value="adjoining">ACTIVITY - Additional Cat - Date at $18.00 Chris day special</option>
-              <option value="adjacent">ACTIVITY - Additional Cat - Date at $24.00 golden experience</option>
+              <option value="connecting">ACTIVITY - at $5.00 JOJO day special (play with toys)</option>
+              <option value="adjoining">ACTIVITY - Date at $15.00 Chris day special (play with toys, take a walk)</option>
+              <option value="adjacent">ACTIVITY - Date at $30.00 golden experience (play with toys, take a walk, play alone with staff (base on requirement))</option>
           </select>
         </div>
         <br>
         <div class="group">
-          <label for="room-selection">ACTIVITY - Additional Cat-Date</label>  
+          <label for="room-selection">ACTIVITY - Choose the Date play to do</label>  
         </div>
-        <div class="group">
-          <label for="message">Enter Any general note you want to make for pet in this Activity<br>
-             - additional Cate-Date activity for Lokki.
-              <br>If you want to address a particular day then you can enter a remark in the table below</label> <br>
-          <br>
-          <textarea cols='100' rows='8' id="message" name="visitor_message" placeholder="Tell us anything else that might be special_consideration for your pets?" ></textarea>
-        </div>
-        <br>
+  
         <div>
           <table>
             <tr>
@@ -172,47 +184,115 @@
               <th>Notes</th>
             </tr>
             <tr>
-              <td>Thursday 2nd June</td>
+              <td>Monday 2nd June</td>
               <td><input type="checkbox"></td>
               <td><input type="checkbox"></td>
               <td><textarea cols='10' rows='1' id="message" name="visitor_message" placeholder="Notes" ></textarea></td>
             </tr>
             <tr>
-              <td>Saturday 12nd June</td>
+              <td>Tuesday 3nd June</td>
               <td><input type="checkbox"></td>
               <td><input type="checkbox"></td>
               <td><textarea cols='10' rows='1' id="message" name="visitor_message" placeholder="Notes" ></textarea></td>
             </tr>
             <tr>
-              <td>Friday 15nd June</td>
+              <td>Wendesday 4nd June</td>
               <td><input type="checkbox"></td>
               <td><input type="checkbox"></td>
               <td><textarea cols='10' rows='1' id="message" name="visitor_message" placeholder="Notes" ></textarea></td>
          
             </tr>
             <tr>
-              <td>Thursday 15nd June</td>
+              <td> Thursday 5nd June</td>
               <td><input type="checkbox"></td>
               <td><input type="checkbox"></td>
               <td><textarea cols='10' rows='1' id="message" name="visitor_message" placeholder="Notes" ></textarea></td>
             
             </tr>
             <tr>
-              <td>Monday 25nd June</td>
+              <td>Friday 6nd June</td>
               <td><input type="checkbox"></td>
               <td><input type="checkbox"></td>
               <td><textarea cols='10' rows='1' id="message" name="visitor_message" placeholder="Notes" ></textarea></td>
            
             </tr>
             <tr>
-              <td>Thursday 30nd June</td>
+              <td>Saturday 7nd June</td>
               <td><input type="checkbox"></td>
               <td><input type="checkbox"></td>
               <td><textarea cols='10' rows='1' id="message" name="visitor_message" placeholder="Notes" ></textarea></td>
              
             </tr>
           </table>
+
+          <div class="group">
+            <label for="message">Enter Any general note you want to make for pet in this Activity<br>
+               - additional activity for Lokki.
+                <br>If you want to address a particular day then you can enter a remark in the table below</label> <br>
+            <br>
+            <textarea cols='100' rows='8' id="message" name="visitor_message" placeholder="Tell us anything else that might be special_consideration for your pets?" ></textarea>
+          </div>
         </div>
+
+        <hr>
+
+        <br>
+        <strong>Insurance And Vet</strong> 
+
+        <div class="group">
+          <label for="room-selection">Select An Insurance For Your Pet</label>
+          <select id="room-selection" name="room_preference" >
+              <option value="">Choose a Insurance from the List</option>
+              <option value="connecting">No Insurance $0 (not recommand)</option>
+              <option value="adjoining"> USYD Nurse Insurance $15 </option>
+              <option value="adjacent"> NSW DOC PRC Insurance $30 </option>
+              <option value="adjacent"> AU CRAZY Insurance $50 </option>
+              <option value="adjacent">Bill Guys Insurance $100</option>
+          </select>
+        </div>
+
+
+        <div class="group">
+          <label for="room-selection">Select An Vet For Your Pet</label>
+          <select id="room-selection" name="room_preference" >
+              <option value="">Choose a Vet from the List</option>
+              <option value="connecting">No Vet $0 (not recommand)</option>
+              <option value="adjoining"> USYD Nurse Vet $15 </option>
+              <option value="adjacent"> NSW DOC PRC Vet $30 </option>
+              <option value="adjacent"> AU CRAZY Vet $50 </option>
+              <option value="adjacent">Bill Guys Vet $100</option>
+          </select>
+        </div>
+        <br>
+
+        <hr>
+
+        <br>
+        <strong>PLAYGROUND</strong>
+        - about 2 hrs per day
+
+        <div>
+          <label for="playground">Swimming Pool $50</label><br>
+          <input type="checkbox">
+          <label for="playground">SandLand $10</label><br>
+          <input type="checkbox">
+          <label for="playground">Grass Ground Pool $10</label><br>
+          <input type="checkbox">
+          <label for="playground">Pet Gym $40</label><br>
+          <input type="checkbox">
+          <label for="playground">Plastic Ball Ground $50</label><br>
+          <input type="checkbox">
+          <label for="playground">Toy Room pool $50</label><br>
+          <input type="checkbox">
+          <label for="playground">NATURAL ROOM $100</label><br>
+        </div>
+
+        <div>
+          <label for="playground">EXTRA TIME ($10 per hr)</label><br>
+          <input type="text">
+        </div>
+        <br>
+
 
 
         <hr>
@@ -251,43 +331,55 @@
           <label for="room-selection">Select Room package</label>
           <select id="room-selection" name="room_preference" >
               <option value="">Choose a Room from the List</option>
-              <option value="connecting">Crazy normal package $44 per day</option>
-              <option value="adjoining">Such a good package $58 per day</option>
-              <option value="adjacent">Even the best package $100 per day</option>
-              <option value="adjacent">Royal individual package $120 per day</option>
-              <option value="adjacent">Bill Guys package $1000 per day</option>
+              <option value="connecting">Crazy normal package $44 per day (6 in one room with window) - sofa, small bed, window, playground </option>
+              <option value="adjoining">Such a good package $58 per day (4 in one room with window) - sofa, small bed, window, playground </option>
+              <option value="adjacent">Even the best package $100 per day (individual room without window) - sofa, large bed, window, playground, toy room  </option>
+              <option value="adjacent">Royal individual package $120 per day (individual room with window) - sofa, small bed, window, playground </option>
+              <option value="adjacent">Bill Guys package $1000 per day (individual room and gallery) 
+                - sofa, small bed, window, playground, sport equipment, TV</option>
           </select>
         </div>
         <div class="group">
-          <label for="message">special consideration for your pets?</label> <br><br>
-          <textarea cols='100' rows='8' id="message" name="visitor_message" placeholder="Tell us anything else that might be special_consideration for your pets?" ></textarea>
+          <label for="room-selection">Select A Food Menu</label>
+          <select id="room-selection" name="room_preference" >
+              <option value="">Choose a Food Menu from the List</option>
+              <option value="connecting">Healthy Food package without snackes Daily $10 (Only healthy Staple)</option>
+              <option value="adjoining">Owner's love Food Package Daily $15 (Healthy staple, one can)</option>
+              <option value="adjacent">Even Better Food Pacjage Daily $30 (Healthy staple, one can, fresh meat base on requirement)</option>
+              <option value="adjacent">Royal Food Package package Daily $50 (Fresh Meat, one can, snackes, Vitamin, calcium)</option>
+              <option value="adjacent">Any special consideration $5</option>
+          </select>
+        </div>
+        <div class="group">
+          <label for="message">special consideration for your pets about food menu?</label> <br><br>
+          <textarea cols='100' rows='3' id="message" name="visitor_message" placeholder="Tell us anything else that might be special_consideration for your pets?" ></textarea>
+        </div>
+
+        <div class="group">
+          <label for="message">special consideration for your pets about Room Configuation?</label> <br><br>
+          <textarea cols='100' rows='3' id="message" name="visitor_message" placeholder="Tell us anything else that might be special_consideration for your pets?" ></textarea>
         </div>
 
         <hr>
 
+        <strong>ACTIVITY</strong>
+
         <br>
         <div class="group">
-          <label for="room-selection">Please select the activities for pet from list then tick the days/times at which you'd like the activity to occur</label>
+          <label for="room-selection">Please select an activity package from the list daily</label>
           <br>
           <br>
           <select id="room-selection" name="room_preference" >
-              <option value="connecting">ACTIVITY - Additional Cat - Date at $22.00 JOJO day special</option>
-              <option value="adjoining">ACTIVITY - Additional Cat - Date at $18.00 Chris day special</option>
-              <option value="adjacent">ACTIVITY - Additional Cat - Date at $24.00 golden experience</option>
+              <option value="connecting">ACTIVITY - at $5.00 JOJO day special (play with toys)</option>
+              <option value="adjoining">ACTIVITY - Date at $15.00 Chris day special (play with toys, take a walk)</option>
+              <option value="adjacent">ACTIVITY - Date at $30.00 golden experience (play with toys, take a walk, play alone with staff (base on requirement))</option>
           </select>
         </div>
         <br>
         <div class="group">
-          <label for="room-selection">ACTIVITY - Additional Cat-Date</label>  
+          <label for="room-selection">ACTIVITY - Choose the Date play to do</label>  
         </div>
-        <div class="group">
-          <label for="message">Enter Any general note you want to make for pet in this Activity<br>
-             - additional Cate-Date activity for Lokki.
-              <br>If you want to address a particular day then you can enter a remark in the table below</label> <br>
-          <br>
-          <textarea cols='100' rows='8' id="message" name="visitor_message" placeholder="Tell us anything else that might be special_consideration for your pets?" ></textarea>
-        </div>
-        <br>
+  
         <div>
           <table>
             <tr>
@@ -297,47 +389,114 @@
               <th>Notes</th>
             </tr>
             <tr>
-              <td>Thursday 2nd June</td>
+              <td>Monday 2nd June</td>
               <td><input type="checkbox"></td>
               <td><input type="checkbox"></td>
               <td><textarea cols='10' rows='1' id="message" name="visitor_message" placeholder="Notes" ></textarea></td>
             </tr>
             <tr>
-              <td>Saturday 12nd June</td>
+              <td>Tuesday 3nd June</td>
               <td><input type="checkbox"></td>
               <td><input type="checkbox"></td>
               <td><textarea cols='10' rows='1' id="message" name="visitor_message" placeholder="Notes" ></textarea></td>
             </tr>
             <tr>
-              <td>Friday 15nd June</td>
+              <td>Wendesday 4nd June</td>
               <td><input type="checkbox"></td>
               <td><input type="checkbox"></td>
               <td><textarea cols='10' rows='1' id="message" name="visitor_message" placeholder="Notes" ></textarea></td>
          
             </tr>
             <tr>
-              <td>Thursday 15nd June</td>
+              <td> Thursday 5nd June</td>
               <td><input type="checkbox"></td>
               <td><input type="checkbox"></td>
               <td><textarea cols='10' rows='1' id="message" name="visitor_message" placeholder="Notes" ></textarea></td>
             
             </tr>
             <tr>
-              <td>Monday 25nd June</td>
+              <td>Friday 6nd June</td>
               <td><input type="checkbox"></td>
               <td><input type="checkbox"></td>
               <td><textarea cols='10' rows='1' id="message" name="visitor_message" placeholder="Notes" ></textarea></td>
            
             </tr>
             <tr>
-              <td>Thursday 30nd June</td>
+              <td>Saturday 7nd June</td>
               <td><input type="checkbox"></td>
               <td><input type="checkbox"></td>
               <td><textarea cols='10' rows='1' id="message" name="visitor_message" placeholder="Notes" ></textarea></td>
              
             </tr>
           </table>
+
+          <div class="group">
+            <label for="message">Enter Any general note you want to make for pet in this Activity<br>
+               - additional activity for Lokki.
+                <br>If you want to address a particular day then you can enter a remark in the table below</label> <br>
+            <br>
+            <textarea cols='100' rows='8' id="message" name="visitor_message" placeholder="Tell us anything else that might be special_consideration for your pets?" ></textarea>
+          </div>
         </div>
+
+        <hr>
+
+        <br>
+        <strong>Insurance And Vet</strong> 
+
+        <div class="group">
+          <label for="room-selection">Select An Insurance For Your Pet</label>
+          <select id="room-selection" name="room_preference" >
+              <option value="">Choose a Insurance from the List</option>
+              <option value="connecting">No Insurance $0 (not recommand)</option>
+              <option value="adjoining"> USYD Nurse Insurance $15 </option>
+              <option value="adjacent"> NSW DOC PRC Insurance $30 </option>
+              <option value="adjacent"> AU CRAZY Insurance $50 </option>
+              <option value="adjacent">Bill Guys Insurance $100</option>
+          </select>
+        </div>
+
+
+        <div class="group">
+          <label for="room-selection">Select An Vet For Your Pet</label>
+          <select id="room-selection" name="room_preference" >
+              <option value="">Choose a Vet from the List</option>
+              <option value="connecting">No Vet $0 (not recommand)</option>
+              <option value="adjoining"> USYD Nurse Vet $15 </option>
+              <option value="adjacent"> NSW DOC PRC Vet $30 </option>
+              <option value="adjacent"> AU CRAZY Vet $50 </option>
+              <option value="adjacent">Bill Guys Vet $100</option>
+          </select>
+        </div>
+        <br>
+
+        <hr>
+
+        <br>
+        <strong>PLAYGROUND</strong>
+        - about 2 hrs per day
+
+        <div>
+          <label for="playground">Swimming Pool $50</label><br>
+          <input type="checkbox">
+          <label for="playground">SandLand $10</label><br>
+          <input type="checkbox">
+          <label for="playground">Grass Ground Pool $10</label><br>
+          <input type="checkbox">
+          <label for="playground">Pet Gym $40</label><br>
+          <input type="checkbox">
+          <label for="playground">Plastic Ball Ground $50</label><br>
+          <input type="checkbox">
+          <label for="playground">Toy Room pool $50</label><br>
+          <input type="checkbox">
+          <label for="playground">NATURAL ROOM $100</label><br>
+        </div>
+
+        <div>
+          <label for="playground">EXTRA TIME ($10 per hr)</label><br>
+          <input type="text">
+        </div>
+        <br>
 
 
         <hr>
