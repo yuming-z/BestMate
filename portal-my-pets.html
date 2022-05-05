@@ -66,6 +66,19 @@
         bottom: 10px;
     }
 
+    .edit{
+        grid-column-start: 2;
+        grid-row-end: 2;
+        
+    }
+
+    li .a{
+        text-align: center;
+    }
+
+    .selectpet{
+        width: 20%;
+    }
 
 
 </style>
@@ -88,6 +101,7 @@
         </div>
 
         <h3>Portal &#8594 My Pets</h3>
+        <h4>Use the checkboxes to select the pets you would like to make a booking for</h4>
 
         <div class="grid-container-menu" style="border:2px solid black">
             <div class="pet-container">
@@ -102,8 +116,11 @@
                 <a>Tom</a>
                 <img src="pic/cat1.jpg">
                 <ul class="manage-pet">
+                    
                     <li><input type="checkbox" checked="checked" name="SelectPet"></li>
-                    <li><a href="#">Edit</a></li>
+                    
+                    <li class="edit"><a href="#">Edit</a></li>
+                    
                     <!-- <li><a href="cart_page.html">Book a stay</a></li> -->
                    
                 </ul>
