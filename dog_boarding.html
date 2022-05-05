@@ -31,6 +31,13 @@
         border:3px solid black;
     }
 
+    .add-ons{
+        display: grid;
+        grid-template-columns: auto auto;
+        width:100%;
+        text-align: center;
+    }
+
 
 </style>
 
@@ -107,50 +114,52 @@
 
     <h1>Add-ons</h1>
     
-    <div id="add-ons">
-        <h1>Doggy Treats</h1>
-        <p>We offer the following treats for dogs at a special add-on price</p>
-        <table style="margin-right:auto; margin-left:auto;">
-            <th>Treat</th><th>Price</th>
+    <div class="add-ons" id="add-ons">
+        <div id="dog-boarding" style="margin-right:auto; margin-left:auto;">
+            <h1>Doggy Treats</h1>
+            <p>We offer the following treats for dogs at a special add-on price</p>
+            <table style="margin-right:auto; margin-left:auto;">
+                <th>Treat</th><th>Price</th>
+        
+                <tr>
+                    <td>Treat 1</td>
+                    <td>$$$</td>
+                </tr>
+        
+                <tr>
+                    <td>Treat 2</td>
+                    <td>$$$</td>
+                </tr>
+            </table>
+        </div>
     
-            <tr>
-                <td>Treat 1</td>
-                <td>$$$</td>
-            </tr>
+        <div id="cat-boarding" style="margin-right:auto; margin-left:auto;">
+            <h1>Special Amentities</h1>
+            <table style="margin-right:auto; margin-left:auto;">
+                <th>Amenity</th><th>Price</th>
+        
+                <tr>
+                    <td>Gym</td>
+                    <td>$$$</td>
+                </tr>
+        
+                <tr>
+                    <td>Walks</td>
+                    <td>$$$</td>
+                </tr>
     
-            <tr>
-                <td>Treat 2</td>
-                <td>$$$</td>
-            </tr>
-        </table>
-    </div>
-
-    <div id="cat-boarding">
-        <h1>Special Amentities</h1>
-        <table style="margin-right:auto; margin-left:auto;">
-            <th>Amenity</th><th>Price</th>
+                <tr>
+                    <td>Vet</td>
+                    <td>$$$</td>
+                </tr>
     
-            <tr>
-                <td>Gym</td>
-                <td>$$$</td>
-            </tr>
     
-            <tr>
-                <td>Walks</td>
-                <td>$$$</td>
-            </tr>
-
-            <tr>
-                <td>Vet</td>
-                <td>$$$</td>
-            </tr>
-
-
-        </table>
+            </table>
+        </div>
     </div>
 </body>
 
-<footer>
+<footer style="width:100%">
     <a href="index.html" class="business-name">BestMate</a>
     <a href="login.html" class="booking-button">Book Now!</a>
 
