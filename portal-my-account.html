@@ -60,6 +60,20 @@
     label {display: table-cell}
     input {display: table-cell}
 
+    .portal-book-now .booking-button{
+        display: block;
+        text-decoration: none;
+        height: 30px;
+        width: 200px;
+        text-align: center;
+        background-color: #1ecbe1;
+        border-radius: 25px;
+        font-size: 20px;
+        color: black;
+        right: 0;
+        bottom: 10px;
+    }
+
 </style>
 
 <nav>
@@ -133,6 +147,8 @@
                     <label for="Postal">Postal / Zip Code</label>
                     <input type="text" id="Postal" name="Postal" >
                 </div>
+
+                
                 <!-- <div class="group">
                     <label for="Street">Street Address Line2</label>
                     <input type="text" id="Street" name="Street">
@@ -150,6 +166,9 @@
         
                 <!-- <hr> -->
             </form>
+        </div>
+        <div class="portal-book-now" style="margin-left: 80%; padding-top: 30px;">
+            <a href="booking_page.html" class="booking-button">Save</a>
         </div>
     
 </body>

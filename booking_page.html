@@ -2,17 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Chat Server</title>
+    <title>Booking</title>
     <link rel="stylesheet" href="booking_page.css">
     <link rel="icon" type="image/x-icon" href="./pic/favicon.ico">
 </head>
 
 <head>
-  <title>Services</title>
+  <title>Booking</title>
   <meta charset="UTF-8" />
   <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
+<style>
+  .Buttons{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+</style>
 
 <header class="title">
   <!-- link to be updated -->
@@ -502,10 +509,15 @@
         <hr>
         
         
-        
-        <span class="btn">
-          <a href="cart_page.html">Add To Cart</a>
-      </span>
+        <div class="Buttons">
+          <span class="btn">
+            <a href="cart_page.html">Add To Cart</a>
+          </span>
+
+          <span class="btn" style="width:115px; height: 50px; margin-left: 60%; background-color: red;" >
+            <a href="portal-my-pets.html" >Cancel</a>
+          </span>
+        </div>
     </form>
 </body>
 
