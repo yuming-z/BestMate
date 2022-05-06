@@ -2,6 +2,7 @@ html {
     scroll-behavior: smooth;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background: url(./pic/review_bg.jpg);
+    text-size-adjust: 200%;
 }
 
 
@@ -576,5 +577,10 @@ footer > .booking-button {
 
     footer > .booking-button {
         margin: 0 33vw;
+    }
+
+    .btn {
+        padding: 0.8em 0.3em !important;
+        display: inline-block;
     }
 }

@@ -14,8 +14,8 @@ div.group {
   margin-right: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
-  height: 50px;
-  width: 150px;
+  /* height: 50px; */
+  /* width: 150px; */
   border-radius: 25px;
 }
 
@@ -51,3 +51,28 @@ td, th {
   border-left-style: solid;
   border-left-color: blue;
 }
+
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  width:100%;
+}
+
+select {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  width:100%;
+}
+
+form label {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  width:100%;
+}
+

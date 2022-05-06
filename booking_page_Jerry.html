@@ -18,7 +18,39 @@
   .Buttons{
     display: grid;
     grid-template-columns: auto auto auto;
+    text-align: center;
   }
+  form button{
+    display: inline-block;
+    background-color: rgb(85, 193, 255);
+    /* margin-left: 10px;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px; */
+    padding-left: 10%;
+    padding-right: 10%;
+    /* height: 50px; */
+    /* width: 150px; */
+    border-radius: 25px;
+    text-align: center;
+  }
+
+  form button a{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  display: inline-block;
+  /* padding-top: 10%; */
+  text-decoration: none;
+  }
+
+  form label{
+
+  }
+}
 </style>
 
 <header class="title">
@@ -141,7 +173,7 @@
 
           <div class="group">
             <label for="message">Additional notes regarding Tom's room configuration:</label> <br><br>
-            <textarea cols='100' rows='3' id="message" name="visitor_message" placeholder="Tell us anything else that might be special_consideration for your pets?" ></textarea>
+            <textarea cols= rows='3' id="message" name="visitor_message" placeholder="Tell us anything else that might be special_consideration for your pets?" ></textarea>
           </div>
 
           <h3>Food</h3>
@@ -290,7 +322,20 @@
           </div> -->
           
           <div class="Buttons">
-            <span class="btn"  style="width:115px; height: 50px;  background-color: rgb(173, 222, 255);">
+            <div>
+              <button type="back-button" style="background-color: rgb(173, 222, 255);"><a href="portal-my-pets.html">&#8592 Back</a></button>
+            </div>
+
+            <div>
+              <button type="back-button" style="background-color:rgb(238, 94, 94);"><a href="portal-my-pets.html">&#10005 Cancel</a></button>
+            </div>
+
+            <div>
+              <button type="back-button"><a href="booking_page_Tom.html">&#8594 Next</a></button>
+            </div>
+          </div>
+
+            <!-- <span class="btn"  style="width:115px; height: 50px;  background-color: rgb(173, 222, 255);">
               <a href="portal-my-pets.html">&#8592 Back</a>
             </span>
             <span class="btn" style="width:115px; height: 50px;   background-color:rgb(238, 94, 94); ">
@@ -298,9 +343,9 @@
             </span>
             <span class="btn" style="width:115px; height: 50px; margin-left: 60%; " >
               <a href="booking_page_Tom.html" >Next</a>
-            </span>
+            </span> -->
             
-          </div>
+          
 
           </div>
 
