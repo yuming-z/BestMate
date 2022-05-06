@@ -64,6 +64,7 @@ display: inline-block;
 
 .table {
     border-style: solid;
+    margin-left: 80px;
 }
 
 .button1 {
