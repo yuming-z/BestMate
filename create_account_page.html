@@ -9,6 +9,14 @@
     <link rel="icon" type="image/x-icon" href="./pic/favicon.ico">
     <title>Sign Up</title>
 </head>
+
+<style>
+    .Buttons{
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+</style>
+
 <body>
      
      <div class="body">
@@ -18,20 +26,32 @@
             <form enctype="multipart/form-data">
                 <div style="width:500px;float:left;margin:0 20px;">
                     <br />
-
-                    <h4 class="title_signup" style="font-size: 30px; padding-bottom: 20px">Create an Account</h4>
-                    <label for="username" class="l">Account name:</label>
+                    
+                    <h3 class="title_signup" style="font-size: 30px; padding-bottom: 20px">Create an Account</h3>
+                    <h4>Account Details</h4><br />
+                    <label for="username" class="l">Name:</label>
                     <br />
                     <div style="position:relative;display:inline;">
                         <input id="username" type="text" style="height:30px;width:250px;padding-right:50px;"  />
                     </div>
                     <br /><br />
-
+                    <label for="login_password" class="l">Password:</label>
+                    <br />
+                    <div class="d">
+                        <input id="login_password" type="password" class="i" />
+                    </div>
+                    <br /><br />
+                    <label for="confirm_password" class="l">Confirm Password:</label>
+                    <br />
+                    <div class="d">
+                        <input id="confirm_password" type="password" class="i">
+                    </div>
+                    <br /><br />
                     
                     <label for="phone_number" class="l">Phone Number:</label>
                     <br />
                     <div class="d">
-                        <input id="phonen_umber" type="text" class="i">
+                        <input id="phonen_number" type="text" class="i">
                     </div>
                     <br /><br />
 
@@ -42,37 +62,81 @@
                         <input id="phonen_umber" type="text" class="i">
                     </div>
                     <br /><br />
-                    
-                    <label for="login_password" class="l">Passward:</label>
+
+                    <label for="phone_number" class="l">Emergency Contact</label>
                     <br />
                     <div class="d">
-                        <input id="login_password" type="password" class="i" />
+                        <input id="phonen_umber" type="text" class="i">
                     </div>
                     <br /><br />
 
-                    
-                    <label for="confirm_password" class="l">confirm password:</label>
+                    <label for="phone_number" class="l">Emergency Contact Phone</label>
                     <br />
                     <div class="d">
-                        <input id="confirm_password" type="password" class="i">
+                        <input id="phonen_umber" type="text" class="i">
+                    </div>
+                    <br /><br />
+
+                    <h4>Address</h4><br>
+
+                    <label for="phone_number" class="l">Address Line 1:</label>
+                    <br />
+                    <div class="d">
+                        <input id="phonen_umber" type="text" class="i">
+                    </div>
+                    <br /><br />
+
+                    <label for="phone_number" class="l">Address Line 2:</label>
+                    <br />
+                    <div class="d">
+                        <input id="phonen_umber" type="text" class="i">
+                    </div>
+                    <br /><br />
+
+                    <label for="phone_number" class="l">Suburb</label>
+                    <br />
+                    <div class="d">
+                        <input id="phonen_umber" type="text" class="i">
+                    </div>
+                    <br /><br />
+
+                    <label for="phone_number" class="l">State</label>
+                    <br />
+                    <div class="d">
+                        <input id="phonen_umber" type="text" class="i">
+                    </div>
+                    <br /><br />
+
+                    <label for="phone_number" class="l">Postcode</label>
+                    <br />
+                    <div class="d">
+                        <input id="phonen_umber" type="text" class="i">
                     </div>
                     <br /><br />
                     
+                    
+
+                    
+                    
+                    
                 
-                    <label for="ver_code" class="l">verification code:</label>
+                    <!-- <label for="ver_code" class="l">verification code:</label>
                     <br />
                     <div class="d">
                         <input id="ver_code" type="text" class="i">
                     </div>
-                    <br /><br />
+                    <br /><br /> -->
                     <input type="checkbox" name="agree" style="margin-left:100px;display:inline-block;" value="1" />
                     <span style="font-size:15px;"><a>I have read and agree to the User Agreement.</a></span>
                     <br /><br />
-                    <div>
+                    <div class="Buttons">
                         <span class="btn">
                             <a href="portal-my-account.html">Sign Up</a>
                         </span>
-                        </div>
+                        <span class="btn" style="background-color: #EE5E5E;">
+                            <a href="login.html">Cancel</a>
+                        </span>
+                    </div>
                     </div>
             </form>
         </div>

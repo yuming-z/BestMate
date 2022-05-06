@@ -40,6 +40,17 @@
     <form action="reservation.php" method="post" class = "form">
 
       <h3>Portal &#8594 Confirm your pet's details and choose a package</h3>
+      <div class="select_pet">
+        <label for="select pet" class="1">Enter booking details for:</label>
+        <div class="d">
+            <select id="select pet" onchange="location=this.value">
+              <option>Select Pet</option>
+              <option value="booking_page_Jerry.html">Jerry</option>
+              <option value="booking_page_Tom.html">Tom</option>
+            </select>
+        </div>
+      </div>
+
         <!-- <label>Owner Information</label>
         <div class="group">
           <label for="first_name">First Name</label>
@@ -100,25 +111,9 @@
 
         <hr> -->
         <div style="background-color: rgba(215, 215, 215, 0.7); padding: 30px; border-radius: 15px;">
-          <strong><label class="strong_pet">Jerry</label></strong>
-          <div class="group">
-            <label for="pet_name">Pet Name</label>
-            <br>
-            <input type="text" id="pet_name" name="pet_name" placeholder="pet name" >
-          </div>
-          <div class="group">
-            <label for="pet_food">Pet Type</label>
-            <br>
-            <input type="text" id="pet_food" name="pet_food" placeholder="Cat" >
-          </div>
-
-          <div class="group">
-            <label for="pet_food">Favourite Food</label>
-            <br>
-            <input type="text" id="pet_food" name="pet_food" placeholder="Meat" >
-          </div>
-          
-      
+          <strong style="margin-top:30%"><label class="strong_pet">Jerry</label></strong>
+          <img src="pic/dog2.jpg" style="margin-left:50%">
+        <hr>
           <div class="group">
             <label for="checkin-date">Check-in Date</label>
             
@@ -128,6 +123,8 @@
           
             <input type="date" id="checkout-date" name="checkout" >
           </div>
+
+          <h3>Room</h3>
           
           <div class="group">
             <label for="room-selection">Select Room package</label>
@@ -141,6 +138,13 @@
                   - sofa, small bed, window, playground, sport equipment, TV</option>
             </select>
           </div>
+
+          <div class="group">
+            <label for="message">Additional notes regarding Tom's room configuration:</label> <br><br>
+            <textarea cols='100' rows='3' id="message" name="visitor_message" placeholder="Tell us anything else that might be special_consideration for your pets?" ></textarea>
+          </div>
+
+          <h3>Food</h3>
           <div class="group">
             <label for="room-selection">Select A Food Menu</label>
             <select id="room-selection" name="room_preference" >
@@ -153,35 +157,41 @@
             </select>
           </div>
           <div class="group">
-            <label for="message">special consideration for your pets about food menu?</label> <br><br>
+            <label for="message">Additional notes regarding Tom's food menu (eg. favourite food):</label> <br><br>
             <textarea cols='100' rows='3' id="message" name="visitor_message" placeholder="Tell us anything else that might be special_consideration for your pets?" ></textarea>
           </div>
 
-          <div class="group">
-            <label for="message">special consideration for your pets about Room Configuation?</label> <br><br>
-            <textarea cols='100' rows='3' id="message" name="visitor_message" placeholder="Tell us anything else that might be special_consideration for your pets?" ></textarea>
-          </div>
+          
 
           <hr>
 
-          <strong>ACTIVITY</strong>
+          <strong>Amenities</strong>
 
           <br>
           <div class="group">
-            <label for="room-selection">Please select an activity package from the list daily</label>
+            <label for="room-selection">Please select any additional amenities you would like for Tom:</label>
             <br>
             <br>
-            <select id="room-selection" name="room_preference" >
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> Walks ($$$)</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> Gym ($$$)</label><br>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> Vet ($$$)</label><br>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> Pool ($$$)</label><br>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> Plastic Ball Playground ($$$)</label><br>
+            <!-- <select id="room-selection" name="room_preference" >
                 <option value="connecting">ACTIVITY - at $5.00 JOJO day special (play with toys)</option>
                 <option value="adjoining">ACTIVITY - Date at $15.00 Chris day special (play with toys, take a walk)</option>
                 <option value="adjacent">ACTIVITY - Date at $30.00 golden experience (play with toys, take a walk, play alone with staff (base on requirement))</option>
-            </select>
+            </select> -->
           </div>
-          <br>
-          <div class="group">
-            <label for="room-selection">ACTIVITY - Choose the Date play to do</label>  
-          </div>
-    
+          <hr>
+          <h3>Daily Activities</h3>
+          <h4 style="font-weight: normal">From the add-ons chosen, please indicate a schedule for everyday of your pet's stay. (For example, on Sunday 1st June, give Tom his medication.)</h4>          
+          
           <div>
             <table>
               <tr>
@@ -233,9 +243,7 @@
             </table>
 
             <div class="group">
-              <label for="message">Enter Any general note you want to make for pet in this Activity<br>
-                - additional activity for Lokki.
-                  <br>If you want to address a particular day then you can enter a remark in the table below</label> <br>
+              <label for="message">Any additional notes regarding your pets stay:<br><br>If you want to address a particular day then you can enter a remark in the table below</label> <br>
               <br>
               <textarea cols='100' rows='8' id="message" name="visitor_message" placeholder="Tell us anything else that might be special_consideration for your pets?" ></textarea>
             </div>
@@ -250,7 +258,7 @@
             <label for="room-selection">Select An Insurance For Your Pet</label>
             <select id="room-selection" name="room_preference" >
                 <option value="">Choose a Insurance from the List</option>
-                <option value="connecting">No Insurance $0 (not recommand)</option>
+                <option value="connecting">Insurance $0 (not recommended)</option>
                 <option value="adjoining"> USYD Nurse Insurance $15 </option>
                 <option value="adjacent"> NSW DOC PRC Insurance $30 </option>
                 <option value="adjacent"> AU CRAZY Insurance $50 </option>
@@ -263,7 +271,7 @@
             <label for="room-selection">Select An Vet For Your Pet</label>
             <select id="room-selection" name="room_preference" >
                 <option value="">Choose a Vet from the List</option>
-                <option value="connecting">No Vet $0 (not recommand)</option>
+                <option value="connecting">No Vet $0 (not recommended)</option>
                 <option value="adjoining"> USYD Nurse Vet $15 </option>
                 <option value="adjacent"> NSW DOC PRC Vet $30 </option>
                 <option value="adjacent"> AU CRAZY Vet $50 </option>
@@ -275,36 +283,31 @@
           <hr>
 
           <br>
-          <strong>PLAYGROUND</strong>
-          - about 2 hrs per day
 
-          <div>
-            <label for="playground">Swimming Pool $50</label><br>
-            <input type="checkbox">
-            <label for="playground">SandLand $10</label><br>
-            <input type="checkbox">
-            <label for="playground">Grass Ground Pool $10</label><br>
-            <input type="checkbox">
-            <label for="playground">Pet Gym $40</label><br>
-            <input type="checkbox">
-            <label for="playground">Plastic Ball Ground $50</label><br>
-            <input type="checkbox">
-            <label for="playground">Toy Room pool $50</label><br>
-            <input type="checkbox">
-            <label for="playground">NATURAL ROOM $100</label><br>
-          </div>
-
-          <div>
+          <!-- <div>
             <label for="playground">EXTRA TIME ($10 per hr)</label><br>
             <input type="text">
+          </div> -->
+          
+          <div class="Buttons">
+            <span class="btn"  style="width:115px; height: 50px;  background-color: rgb(173, 222, 255);">
+              <a href="portal-my-pets.html">&#8592 Back</a>
+            </span>
+            <span class="btn" style="width:115px; height: 50px;   background-color:rgb(238, 94, 94); ">
+              <a href="portal-my-pets.html" >Cancel</a>
+            </span>
+            <span class="btn" style="width:115px; height: 50px; margin-left: 60%; " >
+              <a href="booking_page_Tom.html" >Next</a>
+            </span>
+            
           </div>
-          <br>
 
 
+          
 
-          <hr>
+          <!-- <hr> -->
 
-
+        <!-- <div style="background-color: rgba(215, 215, 215, 0.7); padding: 30px; border-radius: 15px;">
           <label class="strong_pet">Tom</label>
           <div class="group">
             <label for="pet_name">Pet Name</label>
@@ -521,7 +524,7 @@
             </span>
             
           </div>
-        </div>
+        </div> -->
       </form>
 </body>
 
