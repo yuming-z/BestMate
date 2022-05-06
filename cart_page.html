@@ -1,4 +1,12 @@
 <html lang="en-AU">
+
+<style>
+    .Buttons{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+</style>
+
 <div class="cart">
 
     <head>
@@ -24,70 +32,73 @@
             <li><a href="login.html">Sign out</a></li>
         </ul>
     </nav>
+
+    
     
     
     <h3>Portal &#8594 Confirm your pet's details and choose a package &#8594 <label style="color:orange">Cart</label></h3>
-    <table class="table">
-        <tr style="background-color: rgb(255, 243, 233);">
-            <th width="60"><span class="all">Select All</span></th><th width="150">Pets</th><th width="100">Pet Name</th><th>Special Consideration</th><th width="120">Price per night</th>
-            <th width="120">Length of stay</th><th>Starting Date</th><th>End Date</th><th width="120">All</th><th width="80">Operation</th>
-        </tr>
+    <div class="table" style="overflow-x:auto;">
+        <table >
+            <tr style="background-color: rgb(255, 243, 233);">
+                <th width="60"><span class="all">Select All</span></th><th width="150">Pets</th><th width="100">Pet Name</th><th>Special Consideration</th><th width="120">Price per night</th>
+                <th>Starting Date</th><th>End Date</th><th width="120">All</th><th width="80">Operation</th>
+            </tr>
+    
+            <tr class="item">
+                <td><input type="checkbox" checked="checked" class="check" /></td>
+                <td class="txt-left"><span class="name">Jerry</span><br>
+                    <img src="pic/dog2.jpg" alt="dog" width="300" height="200"></td>
+                <td><span class="sc">Jerry</span></td>
+                <td><span class="sc">don't let him touch fire</span></td>
+                <td><span class="price">120</span></td>
+                <!-- <td><span class="reduce">-</span><span class="num">2</span> <span class="add">+</span> </td> -->
+                <td><input type="text" class="form-control" placeholder="18-12-2021" onfocus="(this.type='date')" /></td>
+                <td><input type="text" class="form-control" placeholder="24-12-2021" onfocus="(this.type='date')" /></td>
+                <td><span class="subtotal">2333</span></td>
+                <td><span class="del">Delete</span></td>
+            </tr>
+    
+            <tr class="item">
+                <td><input type="checkbox" checked="checked" class="check" /></td>
+                <td class="txt-left"><span class="name">Tom</span><br>
+                    <img src="pic/cat1.jpg" alt="dog" width="300" height="200"></td>
+                <td><span class="sc">Tom</span></td>
+                <td><span class="sc">She was terrified of other strange cats and left her alone as much as possible</span></td>
+                <td><span class="price">300</span></td>
+                <!-- <td><span class="reduce">-</span><span class="num">4</span> <span class="add">+</span> </td> -->
+                <td><input type="text" class="form-control" placeholder="18-12-2021" onfocus="(this.type='date')" /></td>
+                <td><input type="text" class="form-control" placeholder="22-12-2021" onfocus="(this.type='date')" /></td>
+                <td><span class="subtotal">1314</span></td>
+                <td><span class="del">Delete</span></td>
+            </tr>
+            
+            <tr >
+                <table class="bottom">
+                    
+                    <div class="Buttons">
+                        <div>
+                          <button type="back-button" style="background-color: rgb(173, 222, 255);"><a href="portal-my-pets.html">&#8592 Back</a></button>
+                        </div>
+            
+                        <div>
+                          <button type="back-button" style="background-color:rgb(238, 94, 94);"><a href="portal-my-pets.html">&#10005 Cancel</a></button>
+                        </div>
+    
+                        <a>Have Select 0 Items Total: 0</a>
+            
+                        <div>
+                          <button type="back-button"><a href="checkout.html">&#8594 Check out</a></button>
+                        </div>
+                    </div>
+                </table>
+            
+            </tr>
+            
+        </table>
+    </div>
+    
 
-        <tr class="item">
-            <td><input type="checkbox" checked="checked" class="check" /></td>
-            <td class="txt-left"><span class="name">Cris</span><br>
-                <img src="pic/dog2.jpg" alt="dog" width="300" height="200"></td>
-            <td><span class="sc">Jerry</span></td>
-            <td><span class="sc">don't let him touch fire</span></td>
-            <td><span class="price">120</span></td>
-            <td><span class="reduce">-</span><span class="num">2</span> <span class="add">+</span> </td>
-            <td><input type="text" class="form-control" placeholder="18-12-2021" onfocus="(this.type='date')" /></td>
-            <td><input type="text" class="form-control" placeholder="24-12-2021" onfocus="(this.type='date')" /></td>
-            <td><span class="subtotal">2333</span></td>
-            <td><span class="del">Delete</span></td>
-        </tr>
-
-        <tr class="item">
-            <td><input type="checkbox" checked="checked" class="check" /></td>
-            <td class="txt-left"><span class="name">Henrry</span><br>
-                <img src="pic/cat1.jpg" alt="dog" width="300" height="200"></td>
-            <td><span class="sc">Tom</span></td>
-            <td><span class="sc">She was terrified of other strange cats and left her alone as much as possible</span></td>
-            <td><span class="price">300</span></td>
-            <td><span class="reduce">-</span><span class="num">4</span> <span class="add">+</span> </td>
-            <td><input type="text" class="form-control" placeholder="18-12-2021" onfocus="(this.type='date')" /></td>
-            <td><input type="text" class="form-control" placeholder="22-12-2021" onfocus="(this.type='date')" /></td>
-            <td><span class="subtotal">1314</span></td>
-            <td><span class="del">Delete</span></td>
-        </tr>
-        
-        <tr >
-            <table class="bottom">
-                
-                <td>
-                    <span class="btn" style="background-color: rgb(173, 222, 255) ;">
-                        <a href="booking_page_Tom.html" >&#8592 Back</a>
-                    </span>
-                </td>
-                <td>
-                    <span class="btn" style="background-color: rgb(238, 94, 94);" >
-                        <a href="portal-my-pets.html">Cancel</a>
-                    </span>
-                </td>
-              
-                <td width="70%">
-                    <span class="bottom-span">Have Select 2 Items	Total: <span class="total-price">4000</span></span>
-                </td>
-                <td>
-                    <span class="btn">
-                        <a href="Checkout.html">Check out</a>
-                    </span>
-                </td>
-            </table>
-        
-        </tr>
-        
-    </table>
+    
 
     <footer>
         <a href="index.html" class="business-name">BestMate</a>
