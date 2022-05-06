@@ -552,7 +552,7 @@ footer > .booking-button {
     justify-content: center;
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
     video {
         width: 100%;
         height: auto;
@@ -576,7 +576,9 @@ footer > .booking-button {
     }
 
     footer > .booking-button {
-        margin: 0 33vw;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
     }
 
     .btn {
