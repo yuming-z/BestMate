@@ -476,6 +476,14 @@ footer > .booking-button {
     font-size: 18px;
 }
 
+.about-content{
+    text-align: center;
+}
+
+.about-content ul{
+    list-style: none;
+}
+
 .about-content h1::before, #dog-boarding h1::before, #cat-boarding h1::before {
     content: "\1F43E";
 }
