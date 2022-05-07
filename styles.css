@@ -6,6 +6,13 @@ html {
 }
 
 
+.dpdwn div{
+	display: none;
+}
+.dpdwn:hover div {
+	display:block;
+}
+
 
 header, nav, footer {
     background-color: #1ecbe1;
@@ -62,10 +69,13 @@ nav a {
     padding: 0 10px;
 }
 
+
+
 nav a:hover, nav a:active {
     background-color: #1c008b;
     color: white;
 }
+
 
 /* Floating Containers */
 .float-container {
