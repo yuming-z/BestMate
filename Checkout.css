@@ -13,7 +13,7 @@ li{
 }
 body{
     height: auto;
-    background-color: #fdfdfd;
+    background: url(./pic/review_bg.jpg);
 
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -77,6 +77,7 @@ table {
     width: fit-content;
     border: 1px solid #ddd;
     text-align: center;
+    background: white;
   }
   
   th, td {
